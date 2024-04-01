@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/Background">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:background="@drawable/background_gradient"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/Res_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/bungee_shade"
+                android:shadowColor="@color/white"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:text="@string/Rest_Title"
+                android:textColor="@color/Title"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Res_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Rest_subtitle"
+                android:textColor="@color/Subtitle"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Appetizer_Header"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="150dp"
+                    android:text="@string/appetizer_Block"
+                    android:textColor="@color/Category"
+                    android:textSize="22sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_fastfood_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/Frits_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/batatinha" />
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="10dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Frites_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="10 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Frits_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content">
+
+                    </CheckBox>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Frits_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10.00"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Barbecue_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/churrasco"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="50dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Barbecure_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="8 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Barbecue_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Barbecue_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$8.50"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Sausage_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/linguica"/>
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="10dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Saussage_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="8 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Sausage_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Sausage_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$5.00"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Farofa_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/farofa"
+                    android:layout_marginStart="2dp"/>
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="8dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Farofa_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="20 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Farofa_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Farofa_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$11.70"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Main_Course_Header"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="150dp"
+                    android:text="@string/Main_Course_Block"
+                    android:textColor="@color/Category"
+                    android:textSize="22sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_fastfood_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/Beef_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/bife"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Beef_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="30 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Beef_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Beef_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$45.00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Cooked_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/cozido"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Cooked_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="30 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Cooked_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Cooked_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$25.50"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Chicken_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/frango"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Chiken_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="20 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Chicken_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Chicken_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$18.90"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Yaksoba_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/yaksoba"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Yaksoba_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="20 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Yaksoba_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Yaksoba_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$18.50"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Drinks_Header"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="150dp"
+                    android:text="@string/Drinks_Block"
+                    android:textColor="@color/Category"
+                    android:textSize="22sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_fastfood_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/Suco_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/suco"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Juice_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="5 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Suco_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Suco_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$5.00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Caipirinha_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/drink"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Caipirinha_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="8 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Caipirinha_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Caipirinha_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$10.00"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Desserts_Header"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="150dp"
+                    android:text="@string/Desserts_Block"
+                    android:textColor="@color/Category"
+                    android:textSize="22sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_fastfood_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/Cupckake_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/cupckake"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Cupckake_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="5 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Cupckake_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Cupckake_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$5.00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Croassant_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/croassant"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Croassant_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="5 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Croassant_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Croassant_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$8.00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Popsicle_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/picole"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/Popsicle_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="5 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Popsicle_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Popsicle_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$8.00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+
+                android:id="@+id/Icecream_block"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff">
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/sorvete"
+                    android:layout_marginStart="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="5dp">
+
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="@string/IceCream_Name"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="168dp"
+                        android:layout_height="30dp"
+                        android:text="5 minutos"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/Icecream_check"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </CheckBox>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Icecream_price"
+                    android:textColor="@color/Price"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="$8.00"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Considerantions"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sfff0f0f0sw2cr16bffffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Observações sobre o pedido:"
+                android:layout_marginTop="5dp">
+
+            </EditText>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Total_Payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/sfff0f0f0sw2cr16bffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/text_Ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Total a ser pago:"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/Total_Payment_res"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Label_Res"
+                    android:textAllCaps="true"
+                    android:textColor="@color/Category"
+                    android:textSize="35sp">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/Button_calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/but0"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/background_gradient_2">
+
+            </View>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

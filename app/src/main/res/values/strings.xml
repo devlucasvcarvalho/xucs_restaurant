@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Restaurant_v2</string>
+    <string name="Rest_Title">Xucs Restaurant</string>
+    <string name="Rest_subtitle">O mais saboroso</string>
+
+    <string name="appetizer_Block">Entradas</string>
+    <string name="Frites_Name">Batata Frita</string>
+    <string name="Barbecure_Name">Espetinho</string>
+    <string name="Saussage_Name">Linguíça Toscana</string>
+    <string name="Farofa_Name">Farofa com Bacon</string>
+
+    <string name="Main_Course_Block">Pratos Principais</string>
+    <string name="Beef_Name">Bife a Milanesa</string>
+    <string name="Cooked_Name">Cozido de frango</string>
+    <string name="Chiken_Name">Sobrecoxa</string>
+    <string name="Yaksoba_Name">Yaksoba</string>
+
+    <string name="Drinks_Block">Bebidas</string>
+    <string name="Juice_Name">Suco</string>
+    <string name="Caipirinha_Name">Caipirinha</string>
+
+    <string name="Desserts_Block">Sobremesas</string>
+    <string name="Cupckake_Name">Cupckake</string>
+    <string name="Croassant_Name">Croassant</string>
+    <string name="Popsicle_Name">Picolé</string>
+    <string name="IceCream_Name">Sorvete</string>
+
+    <string name="Label_Res">R$ 0</string>
+    <string name="but0">enviar pedido</string>
+
+    <string name="Toast_safe_Res">Selecione uma opção</string>
+    <string name="Toast_completed_res">Seu pedido foi enviado para o balcão</string>
+
+</resources>

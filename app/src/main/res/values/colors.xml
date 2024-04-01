@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Bar">#6095f0</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Background">#FDFDFD</color>
+    <color name="Title">#A24295</color>
+    <color name="Subtitle">#6D6B87</color>
+    <color name="Category">#5E6776</color>
+    <color name="Price">#181725</color>
+
+</resources>
